@@ -1,0 +1,6 @@
+body { font: 17px/1.6 ui-rounded, "SF Pro Rounded", system-ui, sans-serif; max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; color: #4A2E22; background: #FFF7EE; }
+h1 { font-size: 36px; font-weight: 900; margin: 0 0 4px; }
+h2 { font-size: 19px; font-weight: 900; margin: 32px 0 6px; }
+.sub { opacity: .6; font-weight: 700; margin: 0 0 24px; }
+a { color: #E06A92; font-weight: 700; }
+hr { border: 0; border-top: 2px dashed #F3DCCB; margin: 40px 0; }
