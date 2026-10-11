@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PoopMaxing — дуэль ⚔️</title>
+<meta property="og:title" content="Тебя вызвали на дуэль ⚔️">
+<meta property="og:description" content="Кто за 7 дней дольше просидит на троне. PoopMaxing">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { text-align: center; }
+  .big { font-size: 72px; margin: 24px 0 0; }
+  .code { font: 900 34px ui-monospace, monospace; letter-spacing: 6px; background: #fff; border-radius: 18px; padding: 12px 20px; display: inline-block; margin: 8px 0 20px; }
+  .btn { display: block; background: #F48FB1; color: #fff; text-decoration: none; font-weight: 900; font-size: 19px; padding: 16px; border-radius: 22px; margin: 12px 0; box-shadow: 0 6px 0 #E06A92; }
+  .btn.alt { background: #fff; color: #4A2E22; box-shadow: 0 6px 0 #F3DCCB; }
+</style>
+</head>
+<body>
+<p class="big">⚔️</p>
+<h1 id="title">Тебя вызвали на дуэль!</h1>
+<p class="sub" id="sub">Кто за 7 дней дольше просидит на троне, тот и победил. Деньги никто не увидит, только время.</p>
+<div class="code" id="code">······</div>
+<a class="btn" id="open" href="#">Открыть в PoopMaxing</a>
+<a class="btn alt" href="https://apps.apple.com/app/id6820119032">Скачать в App Store</a>
+<p class="sub" id="hint">Ещё нет приложения? Скачай, введи зарплату, открой вкладку «Дуэли» → «У меня есть код».</p>
+<script>
+  const code = (new URLSearchParams(location.search).get("c") || "").toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6);
+  const en = !navigator.language.toLowerCase().startsWith("ru");
+  if (en) {
+    document.documentElement.lang = "en";
+    document.getElementById("title").textContent = "You've been challenged to a duel!";
+    document.getElementById("sub").textContent = "Whoever spends longer on the throne in the next 7 days wins. Only time counts, never money.";
+    document.getElementById("open").textContent = "Open in PoopMaxing";
+    document.querySelector(".btn.alt").textContent = "Get it on the App Store";
+    document.getElementById("hint").textContent = "No app yet? Install it, enter your pay, open Duels → “I have a code”.";
+  }
+  if (code.length === 6) {
+    document.getElementById("code").textContent = code;
+    const app = "poopmaxing://duel/" + code;
+    document.getElementById("open").href = app;
+    // No automatic redirect: without the app installed Safari shows an "invalid address" alert.
+  }
+</script>
+</body>
+</html>
