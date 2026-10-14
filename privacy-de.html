@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PoopMaxing — Datenschutz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Datenschutzerklärung</h1>
+<p class="sub">PoopMaxing · Stand: 14. Oktober 2026 · <a href="privacy.html">English</a></p>
+
+<p>PoopMaxing weiß nicht, wer du bist, und will es auch nicht wissen.</p>
+<ul>
+<li>Keine Konten, keine Werbung, kein App-übergreifendes Tracking. Die Werbe-ID (IDFA) wird nicht verwendet.</li>
+<li>Gehalt, Währung, Arbeitszeiten und Sitzungsverlauf werden nur auf deinem Gerät gespeichert und mit der App gelöscht. Dein Gehalt verlässt das Telefon nie.</li>
+<li>Alles, was doch an unseren Server geht, hängt an einer zufälligen Spieler-ID, nicht an dir. „Meine Daten auf dem Server löschen“ in den Einstellungen entfernt es.</li>
+</ul>
+
+<h2>Verantwortlicher</h2>
+<p>Verantwortlich im Sinne der DSGVO für die hier beschriebenen Daten ist Vasily Ponomarev, Amsterdam, Niederlande. Kontakt: <a href="mailto:vaspondm@gmail.com">vaspondm@gmail.com</a>.</p>
+
+<h2>Anonyme Statistik (deine Wahl)</h2>
+<p>Wo die DSGVO gilt (EU/EWR, Vereinigtes Königreich und Schweiz, nach der Region deines Geräts), wird nichts erfasst, bevor du in der App „Klar“ tippst; anderswo ist die Statistik an, bis du sie ausschaltest. In beiden Fällen kannst du das jederzeit unter Einstellungen → „Anonyme Nutzungsstatistik“ ändern; beim Ausschalten wird auch die Installations-ID gelöscht.</p>
+<p>Wenn sie an ist, sendet die App Nutzungsereignisse an Google Analytics for Firebase: welche Bildschirme und Funktionen genutzt werden (Einrichtung mit Lohnzeitraum, Währung und Wochenstunden, aber ohne Betrag; Sitzungen mit ihrer Dauer; Kleiderschrank, Karte, Wettkämpfe und Rangliste; Teilen; Fehler). Firebase ergänzt technische Daten: Gerätemodell, iOS- und App-Version, ungefähre Region und eine zufällige Installations-ID. Die Daten sind nicht mit deiner Person verknüpft und werden nicht für Werbung genutzt. Rechtsgrundlage: deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), außerhalb von EU/EWR, UK und Schweiz unser berechtigtes Interesse an der Verbesserung der App. Google speichert die Ereignisse höchstens 14 Monate; siehe <a href="https://firebase.google.com/support/privacy">Firebase-Datenschutz</a> und die <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
+
+<h2>Foto-Check, „Poopys Labor“ (freiwillig)</h2>
+<p>Nur wenn du „Ab ins Labor“ tippst und zustimmst: Das Foto, das du von deinem Häufchen machst, geht an unseren Server und wird an Claude von <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> weitergegeben, das Größe und Form schätzt. Wir speichern oder protokollieren das Foto nicht, und es ist nicht mit dir verknüpft; Anthropic verarbeitet es nach seinen API-Datenrichtlinien. Nur das Ergebnis (Größe, Form und Poopys Kommentar) bleibt eine Stunde auf dem Server, damit du es als Häufchen auf der Karte ablegen kannst. Ohne dein Zutun wird nichts gesendet. Rechtsgrundlage: deine Einwilligung.</p>
+
+<h2>Bezirkskarte und Häufchen (freiwillig)</h2>
+<p>Nur wenn du den Standort erlaubst. Nach einer Sitzung sendet die App die Nummer des ~2-km-Quadrats, in dem sie begann, und wie lange du gesessen hast, mit deiner zufälligen Spieler-ID und deinem Spitznamen. Dein genauer Standort wird nicht gespeichert. Die Quadrate werden jede Woche zurückgesetzt.</p>
+<ul>
+<li><b>Häufchen ablegen:</b> Dein Telefon fragt Apple Karten nach einem öffentlichen Ort in der Nähe (Café, Park, Haltestelle), und nur dessen Position wird gesendet.</li>
+<li><b>Häufchen einsammeln:</b> Nach einer Sitzung wird deine Position einmal gesendet, mit Häufchen in der Nähe verglichen und sofort verworfen.</li>
+<li>Bezirks- und Straßennamen („Du bist hier: …“) ermittelt Apple Karten auf deinem Telefon.</li>
+<li>Sabotage und eingesammelte Häufchen werden bis zu 14 Tage als Ereignis gespeichert, damit der andere Spieler davon erfährt.</li>
+</ul>
+
+<h2>Spitzname und dein Poopy</h2>
+<p>Andere Spieler sehen dich unter einem generierten Spitznamen (ein Wort und eine Zahl, z. B. „Häufchen 2-36“), nie unter deinem Namen. Wenn du einen eigenen Spitznamen eingibst, wird der Text an Claude von Anthropic gesendet, um zu prüfen, dass er nicht beleidigend ist, dann auf unserem Server gespeichert und auf der Karte, in der Rangliste und in Duellen angezeigt. Jeder kann einen Spitznamen melden; nach drei Meldungen wird er auf den generierten zurückgesetzt. Der Poopy, den du trägst (Form und Outfits), wird mit deiner Spieler-ID gesendet, damit andere ihn neben deinem Spitznamen sehen.</p>
+
+<h2>Käufe</h2>
+<p>Outfits werden über Apple gekauft; deine Zahlungsdaten und Apple-ID sehen wir nie. Damit andere einen gekauften Look sehen, sendet die App Apples signierten Kaufbeleg an unseren Server, der ihn mit Apples Schlüsseln prüft. Für den nummerierten Look „Goldstandard“ speichert der Server Transaktions-ID, Nummer und die Spieler-ID, die ihn trägt; die Nummer bleibt nach „Meine Daten auf dem Server löschen“ beim Kauf.</p>
+
+<h2>Geräteprüfung</h2>
+<p>Damit gefälschte Apps nicht auf Karte und Rangliste landen, nutzt die App Apples App Attest: Der Server speichert einen öffentlichen Schlüssel, den der Sicherheitschip deines iPhones für deine zufällige Spieler-ID erzeugt hat, und prüft, dass Anfragen von der echten App kommen. Über dich sagt er nichts.</p>
+
+<h2>Wochenrangliste (freiwillig)</h2>
+<p>Nur wenn du beitrittst: deine Zeit auf dem Thron und die Zahl der Sitzungen dieser Woche, mit Spieler-ID, Spitzname und Poopy, damit andere sehen, wo du stehst. Kein Geld, kein Standort. Du kannst die Rangliste jederzeit verlassen.</p>
+
+<h2>Duelle (freiwillig)</h2>
+<p>Nur wenn du jemanden herausforderst oder eine Herausforderung annimmst: Solange ein Duell läuft, sendet die App Beginn und Dauer deiner Sitzungen ab einer Minute, mit Spieler-ID und Spitzname. Keine Beträge, kein Standort. Der Server speichert diese Sitzungen 40 Tage, damit beendete Duelle ihr Ergebnis zeigen können. Der Name, den du deinem Gegner gibst, bleibt auf deinem Telefon.</p>
+
+<h2>Game Center</h2>
+<p>Wenn du bei Game Center angemeldet bist, gehen deine Zeit auf dem Thron (Minuten pro Woche, längste Sitzung, Zahl der Sitzungen) unter deinem Game-Center-Namen in Apples Bestenlisten. Beträge werden nie gesendet. Es gilt die <a href="https://www.apple.com/de/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</p>
+
+<h2>Auftragsverarbeiter</h2>
+<ul>
+<li>Cloudflare: unser Server und unsere Datenbank (<a href="https://www.cloudflare.com/de-de/privacypolicy/">Datenschutz</a>)</li>
+<li>Google Firebase: Statistik, nur wie oben beschrieben</li>
+<li>Anthropic: Labor und Prüfung von Spitznamen</li>
+<li>Apple: Ortsnamen, Käufe, App Attest, Game Center</li>
+</ul>
+<p>Einige verarbeiten Daten außerhalb der EU auf Grundlage der EU-Standardvertragsklauseln oder des EU-US Data Privacy Framework.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner Daten, auf Einschränkung der Verarbeitung und Widerspruch, und du kannst Einwilligungen jederzeit widerrufen (in den Einstellungen der App). „Meine Daten auf dem Server löschen“ löscht Bezirke, Häufchen, Duelle, Ranglisteneintrag, Spitzname, Look und Geräteschlüssel mit einem Tipp. Da wir nicht wissen, wer du bist, finden wir deine Daten nur über die Spieler-ID auf deinem Telefon; schreib an <a href="mailto:vaspondm@gmail.com">vaspondm@gmail.com</a>, wenn du Hilfe brauchst. Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren, etwa der für deinen Wohnort zuständigen Landesbehörde oder in den Niederlanden bei der <a href="https://autoriteitpersoonsgegevens.nl">Autoriteit Persoonsgegevens</a>.</p>
+
+<h2>Änderungen</h2>
+<p>Wenn sich diese Erklärung ändert, ändert sich auch das Datum oben.</p>
+</body>
+</html>
